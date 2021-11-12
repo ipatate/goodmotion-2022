@@ -1,15 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-export const APP_VERSION = 'v1.0.0'
-
 const Home: NextPage = () => {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="min-h-screen bg-gray-100">
       <Head>
         <title>Goodmotion 2022</title>
       </Head>
-      <main className="flex flex-col justify-center items-center mx-auto prose lg:prose-xl">
+      <main className="flex flex-col items-center justify-center mx-auto prose lg:prose-xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec hoc ille
         non vidit, sed verborum magnificentia est et gloria delectatus. Iubet
         igitur nos Pythius Apollo noscere nosmet ipsos. Itaque vides, quo modo

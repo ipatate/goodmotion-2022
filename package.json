@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch",
+    "test": "jest",
+    "test:w": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -29,6 +30,7 @@
     "@testing-library/react": "^12.1.2",
     "@types/node": "16.11.7",
     "@types/react": "17.0.34",
+    "@types/react-test-renderer": "^17.0.1",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "autoprefixer": "^10.4.0",
     "babel-jest": "^27.3.1",
