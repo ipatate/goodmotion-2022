@@ -1,5 +1,7 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import type { NextPage } from 'next'
+import Head from 'next/head'
+
+export const APP_VERSION = 'v1.0.0'
 
 const Home: NextPage = () => {
   return (
@@ -21,7 +23,7 @@ const Home: NextPage = () => {
         animum;
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
