@@ -37,3 +37,7 @@ yarn-error.log*
 *.tsbuildinfo
 
 storybook-static
+
+
+# Contentlayer
+.contentlayer
