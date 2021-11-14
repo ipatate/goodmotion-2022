@@ -5,6 +5,12 @@ import { allBlogs } from '.contentlayer/data'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 import components from '../components/MDXComponents'
 
+function millisToMinutesAndSeconds(millis: number) {
+  var minutes = Math.floor(millis / 60000)
+  var seconds = ((millis % 60000) / 1000).toFixed(0)
+  return minutes + 'mn ' + (Number(seconds) < 10 ? '0' : '') + seconds
+}
+
 const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [post] = posts
   const Component = useMDXComponent(post.body.code)
@@ -19,7 +25,10 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
           <Image src={post.image} layout="fill" alt="Goodmotion" />
         </div>
         <h2>{post.title}</h2>
+        <div>{post.tags}</div>
+        <div>{millisToMinutesAndSeconds(post.readingTime.time)}</div>
         <div>{post.publishedAt}</div>
+        <div>{post.slugifyTags.map((t: slugifyTagsType) => t.slug)}</div>
         <Component components={components} />
       </main>
     </div>
