@@ -1,9 +1,14 @@
+/**
+ * transform miliseconds to readable time object
+ * @param millis - miliseconds
+ * @returns object with minutes and seconds
+ */
 const millisecondsToReadable = (millis: number) => {
   const minutes = Math.floor(millis / 60000)
   const seconds = ((millis % 60000) / 1000).toFixed(0)
   return {
-    minutes,
-    seconds: Number((Number(seconds) < 10 ? '0' : '') + seconds),
+    minutes: String(minutes),
+    seconds: String(seconds.padStart(2, '0')),
   }
 }
 
