@@ -14,7 +14,7 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
       <Head>
         <title>Goodmotion 2022</title>
       </Head>
-      <main className="flex flex-col items-center justify-center mx-auto prose lg:prose-xl">
+      <main className="flex flex-col items-start justify-start mx-auto prose lg:prose-xl">
         <div className="relative w-full h-96">
           <Image src={post.image} layout="fill" alt="Goodmotion" />
         </div>
