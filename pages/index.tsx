@@ -2,9 +2,9 @@ import { InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { allBlogs } from '.contentlayer/data'
+import millisecondsToReadable from 'helpers/milisecondsToReadable'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 import components from '../components/MDXComponents'
-import millisecondsToReadable from 'helpers/milisecondsToReadable'
 
 const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [post] = posts
