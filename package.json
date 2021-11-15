@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build:content": "./node_modules/.bin/contentlayer build",
-    "build": "next build",
+    "build": "yarn contentlayer build && next build",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",

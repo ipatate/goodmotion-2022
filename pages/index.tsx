@@ -9,7 +9,7 @@ import components from '../components/MDXComponents'
 const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [post] = posts
   const Component = useMDXComponent(post.body.code)
-
+  const redableTime = millisecondsToReadable(post.readingTime.time)
   return (
     <div className="min-h-screen bg-gray-100">
       <Head>
@@ -21,7 +21,9 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
         </div>
         <h2>{post.title}</h2>
         <div>{post.tags}</div>
-        <div>{millisecondsToReadable(post.readingTime.time)}</div>
+        <div>
+          {redableTime.minutes}mn {redableTime.seconds}
+        </div>
         <div>{post.publishedAt}</div>
         <div>{post.slugifyTags.map((t: slugifyTagsType) => t.slug)}</div>
         <Component components={components} />
