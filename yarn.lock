@@ -1152,29 +1152,29 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@contentlayer/cli@0.0.32-dev.0":
-  version "0.0.32-dev.0"
-  resolved "https://registry.yarnpkg.com/@contentlayer/cli/-/cli-0.0.32-dev.0.tgz#3bb62826bec79e2903188444e37b4626fbd0c928"
-  integrity sha512-V3dHzbgf1QsYIXlhNTsVX3bNv7564ESwW6wRu6kzXEkMPn/McOrRiqe+Ipvk9R5RLMzpYGwXMpNCUt0l58YK6A==
+"@contentlayer/cli@0.0.32":
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/@contentlayer/cli/-/cli-0.0.32.tgz#573947ccd1993e2c6e8b0d6655e48ea401debde0"
+  integrity sha512-exCjv6xVeJ3+OeC4TPvdvuhCAJtf2rW4xBKhENqHPmP2bWVzsTBE2q9Pdtw4BSSHkGJ0fjetZ6HMBbPgXA41Pw==
   dependencies:
-    "@contentlayer/core" "0.0.32-dev.0"
-    "@contentlayer/utils" "0.0.32-dev.0"
+    "@contentlayer/core" "0.0.32"
+    "@contentlayer/utils" "0.0.32"
     clipanion "^3.2.0-rc.3"
     typanion "^3.5.0"
 
-"@contentlayer/client@0.0.32-dev.0":
-  version "0.0.32-dev.0"
-  resolved "https://registry.yarnpkg.com/@contentlayer/client/-/client-0.0.32-dev.0.tgz#b40ab6d4a0f905aba538f8c9ffbf4de8ec3207c2"
-  integrity sha512-1snPRMU9X/PBMHSC1ADyDaYTNbB5y6J+FyqXV+2Rk3XJkB+5TeEQ4WlP+pWgRy+rDE8rLUxL5XP0SAec8H3C7Q==
+"@contentlayer/client@0.0.32":
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/@contentlayer/client/-/client-0.0.32.tgz#89b5d8f34e3a2c01ca32636f85499bb96db75005"
+  integrity sha512-OcYKntXCm/uNUaIS0okRDCjkj9fL+n91vu2Ap/E5n9Isrzz2P1JLkp5h7sgofVffByTgCwhiF+l65PkXoglUew==
   dependencies:
-    "@contentlayer/core" "0.0.32-dev.0"
+    "@contentlayer/core" "0.0.32"
 
-"@contentlayer/core@0.0.32-dev.0":
-  version "0.0.32-dev.0"
-  resolved "https://registry.yarnpkg.com/@contentlayer/core/-/core-0.0.32-dev.0.tgz#d00262b56f93119769810b721b9f43a3c37a2ce1"
-  integrity sha512-uKICYrnMQk8z8oCmFSZFa99yU/LBB5s98fJIo2AOMyWAkrXNEzCKiU/7Q6rp9VOQNq9WBwBnXJEDgPLEqdWvMw==
+"@contentlayer/core@0.0.32":
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/@contentlayer/core/-/core-0.0.32.tgz#45119318e213f68e8ef5dd0494fe31d8b2ef6384"
+  integrity sha512-xv4UClu37rExj86soFBBx9v5oHG/PpO38HYYN7MWfGVL5+6q3RebcMPDDZZsL1fXZG4/xxTwVURQK51vJ3hqzw==
   dependencies:
-    "@contentlayer/utils" "0.0.32-dev.0"
+    "@contentlayer/utils" "0.0.32"
     camel-case "^4.1.2"
     date-fns "2.x"
     esbuild "0.11.x || 0.12.x || 0.13.x"
@@ -1187,13 +1187,13 @@
     type-fest "^1.2.1"
     unified "^10.1.0"
 
-"@contentlayer/source-files@0.0.32-dev.0":
-  version "0.0.32-dev.0"
-  resolved "https://registry.yarnpkg.com/@contentlayer/source-files/-/source-files-0.0.32-dev.0.tgz#54f17de33a374b1f1caa708a109d978bc4a2219e"
-  integrity sha512-LbuInge3OJwnyZ4wf3AZH4QDGp8IaJjPJa0DvTF1HpaBT30FVWvabe8zXW5ZgVma3Qc6Su1yRwEZDucJm/aIBg==
+"@contentlayer/source-files@0.0.32":
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/@contentlayer/source-files/-/source-files-0.0.32.tgz#0ca86e22ed39db728d2fe7c7f88259ba968b7c1a"
+  integrity sha512-GIrDTWwJGTIpD9MvQLM/OZE72B6EQ7ZSJNd+s6Vz5mmWhbcM2rafeRPDECL4b4/TBoGFmAyBoJUgEcp9KjOg+Q==
   dependencies:
-    "@contentlayer/core" "0.0.32-dev.0"
-    "@contentlayer/utils" "0.0.32-dev.0"
+    "@contentlayer/core" "0.0.32"
+    "@contentlayer/utils" "0.0.32"
     chokidar "^3.5.2"
     date-fns-tz "^1.1.6"
     glob "^7.2.0"
@@ -1204,10 +1204,10 @@
     unified "^10.1.0"
     yaml "^1.10.2"
 
-"@contentlayer/utils@0.0.32-dev.0":
-  version "0.0.32-dev.0"
-  resolved "https://registry.yarnpkg.com/@contentlayer/utils/-/utils-0.0.32-dev.0.tgz#123c1928285dc4f0a4d095a25838a1845e113266"
-  integrity sha512-X4iX+CCyRPrW7uRzVce7Boev0k25aSY9aYLzpBRIgbRklxtrUcKnHjQ3fFLcLDKlo1qhICLoYdTGOI2aNFF88Q==
+"@contentlayer/utils@0.0.32":
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/@contentlayer/utils/-/utils-0.0.32.tgz#15311b0640b774b8a01a0a9c30d4d1b50f6f8b1f"
+  integrity sha512-dwYV8mfUXzDHir81JQM8NohVD9fZXtkVNK9gFi4POWtxc9FHz4b5CSQlJcf457xf8l8ImmHWJhJb0LN8GwAX2A==
   dependencies:
     "@effect-ts/core" "^0.45.5"
     "@effect-ts/otel" "^0.7.1"
@@ -5428,16 +5428,16 @@ content-type@~1.0.4:
   resolved "https://registry.npmjs.org/content-type/-/content-type-1.0.4.tgz"
   integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
 
-contentlayer@^0.0.32-dev.0:
-  version "0.0.32-dev.0"
-  resolved "https://registry.yarnpkg.com/contentlayer/-/contentlayer-0.0.32-dev.0.tgz#45a0dfea396ed5339a42028a9fd28895704c8799"
-  integrity sha512-TNW89m8sfLU5WQPfa9QrWy8k+NKOQe4xGOl26Baj5lLxj+NKKUEYgnAzanrEqBtWUh4W2v3H1TQM4Qu4LOleRA==
+contentlayer@^0.0.32:
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/contentlayer/-/contentlayer-0.0.32.tgz#20b1209463b972b3959ccf168c77e53200455499"
+  integrity sha512-i82VAXhIVTPA3m37TS2AN5AU/FZbko/SLjIc7KKVOA7cdm91c4z+bqGMe+61Ibsd9vOK5pl9WFgDgKkIXzM9MQ==
   dependencies:
-    "@contentlayer/cli" "0.0.32-dev.0"
-    "@contentlayer/client" "0.0.32-dev.0"
-    "@contentlayer/core" "0.0.32-dev.0"
-    "@contentlayer/source-files" "0.0.32-dev.0"
-    "@contentlayer/utils" "0.0.32-dev.0"
+    "@contentlayer/cli" "0.0.32"
+    "@contentlayer/client" "0.0.32"
+    "@contentlayer/core" "0.0.32"
+    "@contentlayer/source-files" "0.0.32"
+    "@contentlayer/utils" "0.0.32"
 
 convert-source-map@1.7.0:
   version "1.7.0"
@@ -10916,13 +10916,13 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.npmjs.org/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-next-contentlayer@^0.0.32-dev.0:
-  version "0.0.32-dev.0"
-  resolved "https://registry.yarnpkg.com/next-contentlayer/-/next-contentlayer-0.0.32-dev.0.tgz#d4be01d1ca3fb57e7ad6c7598625b9e60cd39379"
-  integrity sha512-PylnzO+VErOIQwevvmT40A8me4XZzLIYX23M7/2CTIRZ9GqJn8meLcyTt1Jz3FLQXk8gjPyhbjvLHZ+zjzyCnQ==
+next-contentlayer@^0.0.32:
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/next-contentlayer/-/next-contentlayer-0.0.32.tgz#ca913e42361cc6e86e88b6e20eb9e07826e149b5"
+  integrity sha512-jjhEddXeVzmOfT/5Pz8RrElL2s34lz5/JBEkxDkFOBQdmqm0mdFmgAXV2Tb5QRd2eTWr/4S9OG25FBUePHM17w==
   dependencies:
-    "@contentlayer/core" "0.0.32-dev.0"
-    "@contentlayer/utils" "0.0.32-dev.0"
+    "@contentlayer/core" "0.0.32"
+    "@contentlayer/utils" "0.0.32"
     rxjs "^7.1.0"
 
 next@12.0.3:
