@@ -2,6 +2,9 @@
 import { withContentlayer } from 'next-contentlayer'
 
 export default withContentlayer({
+  experimental: {
+    concurrentFeatures: true,
+  },
   reactStrictMode: true,
   swcMinify: true,
   images: {
