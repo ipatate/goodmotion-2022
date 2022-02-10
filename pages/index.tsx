@@ -8,7 +8,7 @@ const Home: NextPage = () => {
         <title>Goodmotion 2022</title>
       </Head>
       <main className="flex flex-col items-center justify-center mx-auto prose lg:prose-xl">
-        <h1>Hello World</h1>
+        <h1>Hello World !</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec hoc ille
           non vidit, sed verborum magnificentia est et gloria delectatus. Iubet
