@@ -4,12 +4,15 @@ import {
   makeSource,
 } from 'contentlayer/source-files'
 
+import slugify from 'slugify'
 import readingTime from 'reading-time'
 import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug'
 import rehypeCodeTitles from 'rehype-code-titles'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypePrism from 'rehype-prism-plus'
+
+type slugifyTagsType = { name: string; slug: string }
 
 const computedFields: ComputedFields = {
   readingTime: { type: 'json', resolve: (doc) => readingTime(doc.body.raw) },
@@ -30,10 +33,33 @@ const Blog = defineDocumentType(() => ({
   fields: {
     title: { type: 'string', required: true },
     publishedAt: { type: 'string', required: true },
+    updatedAt: { type: 'string', required: true },
     summary: { type: 'string', required: true },
     image: { type: 'string', required: true },
+    tags: {
+      type: 'list',
+      of: { type: 'string' },
+      description: 'The tags of the post',
+      required: true,
+    },
   },
-  computedFields,
+  computedFields: {
+    ...computedFields,
+    ...{
+      slugifyTags: {
+        type: 'list',
+        resolve: (doc) => {
+          if (doc.tags?._array.length === 0) return []
+          return doc.tags._array.map(
+            (tag: string): slugifyTagsType => ({
+              name: tag,
+              slug: slugify(tag, { lower: true }),
+            })
+          )
+        },
+      },
+    },
+  },
 }))
 
 const OtherPage = defineDocumentType(() => ({
